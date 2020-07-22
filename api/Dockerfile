@@ -6,5 +6,5 @@ ADD ./package.json /src/package.json
 RUN npm install
 ADD ./nodemon.json /src/nodemon.json
 ADD ./index.js /src/index.js
-EXPOSE 7000
+EXPOSE 7777
 CMD node index.js

@@ -148,6 +148,6 @@ app.use(function(req, res, next) {
 });
 
 
-app.listen(7000, () => {
- console.log("El servidor está inicializado en el puerto 7000");
+app.listen(7777, () => {
+ console.log("El servidor está inicializado en el puerto 7777");
 });
