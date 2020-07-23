@@ -3,15 +3,17 @@ services:
     my-app:
         build: './my-app'
         ports:
-            - "8080:8080"
+            - "8080:80"
         #links: 
         #    - api
         #    - db
+        
     api:  
         build: './api'
         ports:    
             - "7777:7777"
+        
     db:
-        image: mongo
+        build: './db'
         ports: 
             - "27017:27017"
